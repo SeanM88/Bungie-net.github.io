@@ -98,7 +98,8 @@ SIDEBAR MENU
 }
 
 .sidebar li {
-  margin: 0 0 0.5rem;
+  margin: 0 0 var(--base-margin);
+  color: var(--white);
 }
 
 .sidebar a {
@@ -108,10 +109,6 @@ SIDEBAR MENU
 .sidebar a:hover {
   color: var(--link-lite);
   transition: 200ms;
-}
-
-.sidebar li {
-  color: var(--link-lite);
 }
 
 .sidebar li div ul {
@@ -251,9 +248,11 @@ PAGE CONTENT
   margin: var(--indent);
   padding-bottom: var(--base-margin);
 }
+
 .property .contents {
   font-size: var(--text-sm);
 }
+
 .title {
   color: var(--blue);
   font-weight: bold;
@@ -290,8 +289,19 @@ PAGE CONTENT
   margin: var(--indent);
 }
 
+.type-info .attributes:not(:empty) {
+  margin-bottom: var(--base-margin);
+}
+
 .type-info .type {
   margin: 0;
+}
+
+.enum-values.box {
+  margin: var(--base-margin) 0;
+}
+.enum-values.box ul {
+  padding: var(--indent);
 }
 
 /*-----------------------
